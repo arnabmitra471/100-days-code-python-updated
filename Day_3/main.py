@@ -1,34 +1,15 @@
-# This is main.py
-
-# Modules and pip in python
-
-import json
-
-
-students = '''
-{
-    "name": "Arnab",
-    "age" : 19,
-    "programming languages" : ["Java","Python","Javascript"],
-    "has friends": true
-}
-'''
-print(students)
-
-
-parsed_str = json.loads(students)
-
-print(parsed_str)
-
-print(type(parsed_str))
+import pandas as pd
 
 data = {
-    "name": "Arnab",
-    "age" : 19,
-    "programming languages" : ["Java","Python","Javascript"],
-    "has friends": True
+    "ice_cream_size" : [12,14,16,20,22,24,26,28],
+    "ice_cream_price" : [20,28,36,44,52,60,68,76]
 }
-print(data)
+df = pd.DataFrame(data)
+print(df)
 
-parsed_data = json.dumps(data)
-print(parsed_data)
+df.to_csv("ice_cream_sales.csv",index=False)
+
+print()
+
+csv_data = pd.read_csv("ice_cream_sales.csv")
+print(csv_data)
