@@ -1,9 +1,5 @@
 # This is main.py
 
-apple = "An apple a day keeps the doctor away"
-
-print(apple)
-
 name = "Arnab Mitra"
 print(name)
 
@@ -60,3 +56,10 @@ len(nm) -4 = 5 - 4 = 1 | len(nm) - 2 = 3
 '''
 nm = "Harry"
 print(nm[-4:-2])
+
+apple = "An apple a day keeps the doctor away"
+
+print(apple[1:6])
+print(apple[1:6:2])
+print(apple[1:16:3])
+print(apple[12:8:-3])
