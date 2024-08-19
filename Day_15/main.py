@@ -21,14 +21,14 @@ match x:
     case _:
         print("Invalid value entered. Please enter a valid value")
 """
-
+# Providing options to the user for temperature conversion
 print("1. Fahrenheit to Celsius")
 print("2. Celsius to Fahrenheit")
 print("3. Celsius to Kelvin")
 print("4. Kelvin to Celsius")
-
+# Taking input from the user as an integer for the choice
 choice = int(input("Enter your choice: "))
-
+# Writing a match statement with the respective cases and logic
 match choice:
     case 1:
         temp = float(input("Enter a temperature value in fahrenheit: "))
