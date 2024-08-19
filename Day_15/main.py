@@ -1,7 +1,8 @@
 # This is main.py
 
-x = int(input("Enter a value between 0 to 4: "))
-
+# x = int(input("Enter a value between 0 to 4: "))
+# Using match case statement to check the value of x against several cases
+"""
 match x:
     case 0:
         print("Case is 0")
@@ -19,3 +20,31 @@ match x:
         print(x,"is not 80")
     case _:
         print("Invalid value entered. Please enter a valid value")
+"""
+
+print("1. Fahrenheit to Celsius")
+print("2. Celsius to Fahrenheit")
+print("3. Celsius to Kelvin")
+print("4. Kelvin to Celsius")
+
+choice = int(input("Enter your choice: "))
+
+match choice:
+    case 1:
+        temp = float(input("Enter a temperature value in fahrenheit: "))
+        celsius = (temp - 32) * 5/9
+        print("{0} degrees fahrenheit is {1} degree celsius".format(temp,celsius))
+    case 2:
+        temp = float(input("Enter a temperature value in celsius: "))
+        fahrenheit = (temp * 9/5) + 32
+        print("{0} degrees celsius is {1} degrees fahrenheit".format(temp,fahrenheit))
+    case 3:
+        temp = float(input("Enter the temperature in celsius: "))
+        kelvin = temp + 273
+        print("{0} degrees celsius is {1} kelvin".format(temp,kelvin))
+    case 4:
+        temp = float(input("Enter the temperature in kelvin: "))
+        celsius = temp - 273
+        print("{0} kelvin is {1} degrees celsius".format(temp,celsius))
+    case _:
+        print("Invalid choice")
