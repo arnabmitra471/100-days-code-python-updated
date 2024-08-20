@@ -1,5 +1,5 @@
 # This is main.py
-# import time
+import time
 name = "Arnab Mitra"
 print(name)
 for i in name:
@@ -34,12 +34,12 @@ print()
 for rev_color in range(len(colors)-1,-1,-1):
     print(colors[rev_color])
 
-# for i in range(51,0,-1):
-#     if i % 2 == 0:
-#         print(i)
-#         time.sleep(1.5)
-#     else:
-#         print("It is an odd number")
+for i in range(51,0,-1):
+    if i % 2 == 0:
+        print(i)
+        time.sleep(1.5)
+    else:
+        print("It is an odd number")
 
 # for k in range(5):
 #     print(k + 1)
