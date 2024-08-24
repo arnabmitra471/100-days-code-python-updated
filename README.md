@@ -3,7 +3,7 @@ This course is a 100 days of code with python. Python is a very popular high lev
 
 - basic concepts
     - Loops
-    - conditinals
+    - conditionals
     - operators
     - break and continue statements
     - and a lot more
