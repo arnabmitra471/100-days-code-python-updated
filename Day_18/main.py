@@ -81,3 +81,32 @@ else:
         t1 = t2
         t2 = t3
         print(t3)
+
+
+
+while True:
+    print("1. Celsius to Fahrenheit")
+    print("2. Fahrenheit to Celsius")
+    print("3. Celsius to Kelvin")
+    print("4. Kelvin to Celsius")
+    print("5. Exit")
+    choice = int(input("Enter your choice: "))
+    match choice:
+        case 1:
+            celsius = float(input("Enter the temperature value: "))
+            fahrenheit = (celsius * 9/5) + 32
+            print("{} degree celsius is {} degree fahrenheit".format(celsius,fahrenheit))
+        case 2:
+            fahrenheit = float(input("Enter the temperature value: "))
+            celsius = (fahrenheit - 32) * 5/9
+            print("{} degree fahrenheit is {} degree celsius".format(fahrenheit,celsius))
+        case 3:
+            celsius = float(input("Enter the temperature value: "))
+            kelvin = celsius + 273
+            print("{} degree celsius is {} kelvin".format(celsius,kelvin))
+        case 4:
+            kelvin = float(input("Enter the temperature value: "))
+            celsius = kelvin - 273
+            print("{} kelvin is {} degree celsius".format(kelvin,celsius))
+        case 5:
+            break
