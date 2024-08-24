@@ -62,7 +62,22 @@ if num < 0:
 elif num == 0:
     print("The factorial is",fact)
 else:
-    while num > 0:
-        fact *= num
-        num -= 1
+    for count in range(num,0,-1):
+        fact *= count
     print("The factorial of the number is",fact)
+
+
+n = int(input("Enter the number of terms: "))
+t1 = 0
+t2 = 1
+
+if n == 1:
+    print(t1)
+else:
+    print(t1)
+    print(t2)
+    for _ in range(1,n+1):
+        t3 = t1 + t2
+        t1 = t2
+        t2 = t3
+        print(t3)
