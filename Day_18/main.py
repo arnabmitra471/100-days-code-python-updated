@@ -62,7 +62,7 @@ if num < 0:
 elif num == 0:
     print("The factorial is",fact)
 else:
-    for count in range(num,0,-1):
+    for count in range(1,num+1):
         fact *= count
     print("The factorial of the number is",fact)
 
@@ -83,7 +83,7 @@ else:
         print(t3)
 
 
-
+# Infinite while loop
 while True:
     print("1. Celsius to Fahrenheit")
     print("2. Fahrenheit to Celsius")
@@ -110,3 +110,5 @@ while True:
             print("{} kelvin is {} degree celsius".format(kelvin,celsius))
         case 5:
             break
+        case _:
+            print("Invalid choice. Please select a valid option")
