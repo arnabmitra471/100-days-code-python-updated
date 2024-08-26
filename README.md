@@ -21,3 +21,7 @@ Sample code demonstrating a for loop
 for i in range(1,101):
   print(i, "Arnab")
 ```
+
+```shell
+git clone https://github.com/arnabmitra471/100-days-code-python-updated.git
+```
